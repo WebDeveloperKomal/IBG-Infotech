@@ -2585,3 +2585,43 @@ body.rtl .elementor-7253 .elementor-element.elementor-element-fdd7f88 {
 #div3 {
     margin-left: -11px;
 }
+
+#button {
+    visibility: visible;
+    animation-name: fadeInUp;
+    margin-left: 43px;
+}
+
+.ct-info-box2 .item--title {
+    font-size: 15px;
+    color: #67687a;
+    line-height: normal;
+    margin-left: 1px;
+}
+
+.ct-info-box2 .item--phone {
+    font-family: fira sans, sans-serif;
+    font-size: 24px;
+    color: #000427;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: -3px;
+}
+
+.ct-info-box2 .item--icon {
+    min-width: 56px;
+    width: 56px;
+    height: 56px;
+    border: 2px solid #eeeff4;
+    -webkit-border-radius: 56px;
+    -khtml-border-radius: 56px;
+    -moz-border-radius: 56px;
+    -ms-border-radius: 56px;
+    -o-border-radius: 56px;
+    border-radius: 56px;
+    line-height: 52px;
+    text-align: center;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 43px;
+}
