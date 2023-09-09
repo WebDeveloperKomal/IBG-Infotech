@@ -2566,6 +2566,10 @@ body.rtl .elementor-7253 .elementor-element.elementor-element-fdd7f88 {
     margin-top: -35px;
 }
 
-.ct-button-shortcode.btn.btn-outline-gradient.btn-nina {
+/* .ct-button-shortcode.btn.btn-outline-gradient.btn-nina {
     margin-top: 40px;
+} */
+
+#contact {
+    margin-left: 40px;
 }
