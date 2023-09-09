@@ -2558,6 +2558,10 @@ body.rtl .elementor-7253 .elementor-element.elementor-element-fdd7f88 {
 
 /* ********************************************************************** */
 
-.item--title2 {
-    margin-left: -4px;
+.ct-fancy-box-layout3.style2 .item--title2 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.44444;
+    margin-left: -2px;
+    margin-top: -35px;
 }
