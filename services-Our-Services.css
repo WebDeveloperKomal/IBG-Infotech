@@ -1,6 +1,13 @@
 #a1 {
-    margin-top: -46px;
+    margin-top: -44px;
 }
+
+#holder {
+    margin-top: -44px;
+    height: 305px;
+}
+
+
 
 
 /* ************************************** */
@@ -88,10 +95,6 @@
     height: 304px;
 } */
 
-#holder {
-    margin-top: -47px;
-    height: 304px;
-}
 
 .ct-breadcrumb li:after {
 
