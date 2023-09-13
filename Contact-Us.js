@@ -10,9 +10,8 @@ function saveContactUsForm() {
 
     console.log(JSON.stringify(contactUsForm));
 
-
     if (contactUsForm != null) {
-        alert("message sent successfully!")
+        alert("Send mesage successfully!")
     }
 
 
@@ -31,4 +30,17 @@ function saveContactUsForm() {
         .catch(error => console.error('Error:', error));
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 

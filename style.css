@@ -2625,3 +2625,17 @@ body.rtl .elementor-7253 .elementor-element.elementor-element-fdd7f88 {
     margin-right: 15px;
     margin-left: 43px;
 }
+
+
+/* ***************************************** */
+
+
+.ct-fancy-box-layout11 .item--link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    box-shadow: 3px 5px 3px 5px darkgray;
+}

@@ -1,0 +1,43 @@
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    
+    gap: 20px;
+   
+}
+
+.responsive-image {
+    max-width: 100%;
+    
+    height: auto;
+    
+}
+
+
+
+
+.container-widget {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+    gap: 20px;
+    
+}
+
+.responsive-text {
+    max-width: 100%;
+   
+}
+
+
+@media (max-width: 768px) {
+    .container-widget {
+        flex-direction: column;
+        
+    }
+
+    .responsive-image {
+        max-width: 100%;
+       
+    }
+} */
