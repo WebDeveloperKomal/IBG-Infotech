@@ -1,3 +1,149 @@
+@media(max-width: 768px) {
+    #ravan {
+        margin-top: -30px;
+    }
+
+    #ravan1 {
+        margin-top: -60px;
+    }
+
+    #ravan2 {
+        margin-top: -60px;
+    }
+
+    #ravan3 {
+        margin-top: -60px;
+    }
+
+    #ravan4 {
+        margin-top: -170px;
+    }
+
+
+
+    /* *********************************************************** */
+
+    #data1 {
+        margin-top: -30px;
+    }
+
+    #data2 {
+        margin-top: -60px;
+    }
+
+    #data3 {
+        margin-top: -60px;
+    }
+
+    #data4 {
+        margin-top: -60px;
+    }
+
+    #data5 {
+        margin-top: -170px;
+    }
+
+
+    /* ***************************************************** */
+
+    #card1 {
+        margin-top: -30px;
+    }
+
+    #card2 {
+        margin-top: -60px;
+    }
+
+    #card3 {
+        margin-top: -60px;
+    }
+
+    #card4 {
+        margin-top: -60px;
+    }
+
+
+    #card5 {
+        margin-top: -170px;
+    }
+
+
+
+}
+
+
+/* ********************************************************************************** */
+
+@media(min-width: 1440px) {
+    #ravan {
+        margin-top: -180px;
+    }
+
+    #ravan1 {
+        margin-top: -200px;
+    }
+
+    #ravan2 {
+        margin-top: -200px;
+    }
+
+    #ravan3 {
+        margin-top: -220px;
+    }
+
+    #ravan4 {
+        margin-top: -480px;
+    }
+
+    /* ****************************************************** */
+
+    #data1 {
+        margin-top: -180px;
+    }
+
+    #data2 {
+        margin-top: -200px;
+    }
+
+    #data3 {
+        margin-top: -200px;
+    }
+
+    #data4 {
+        margin-top: -220px;
+    }
+
+    #data5 {
+        margin-top: -480px;
+    }
+
+    /* ****************************************************************** */
+
+
+    #card1 {
+        margin-top: -180px;
+    }
+
+    #card2 {
+        margin-top: -200px;
+    }
+
+    #card3 {
+        margin-top: -200px;
+    }
+
+    #card4 {
+        margin-top: -220px;
+    }
+
+    #card5 {
+        margin-top: -480px;
+    }
+
+
+
+}
+
 .ct-language-switcher1 .current--item label:after {
     /* content: "\f102";
     font-family: Caseicon;
@@ -1271,6 +1417,12 @@ body:not(.rtl) .elementor-7253 .elementor-element.elementor-element-fdd7f88 {
 body.rtl .elementor-7253 .elementor-element.elementor-element-fdd7f88 {
     left: -540px;
 }
+
+/* **************************************************************************************** */
+
+
+
+
 
 @media(min-width: 768px) {
     .elementor-7253 .elementor-element.elementor-element-12f01d6 {
