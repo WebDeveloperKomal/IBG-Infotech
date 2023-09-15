@@ -1,6 +1,37 @@
-#a1 {
-    margin-top: -47px;
+@media(max-width: 768px) {
+    #service1 {
+        margin-top: -30px;
+
+    }
+
+    #service2 {
+        margin-top: -20px;
+    }
+
+    #service3 {
+        margin-top: -20px;
+    }
+
+    #a1 {
+        margin-top: -15px;
+    }
+
+    #service4 {
+        margin-top: -14px;
+    }
+
+    #service5 {
+        margin-top: -15px;
+    }
 }
+
+
+@media(min-width: 1440px) {
+    #a1 {
+        margin-top: -45px;
+    }
+}
+
 
 #holder {
     margin-top: -47px;
