@@ -375,6 +375,27 @@
 
 /* css file */
 
+#ct_heading-11db928.ct-heading .item--sub-title span {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e7eaee), to(#e7eaee));
+    background-image: -webkit-linear-gradient(to left, #e7eaee, #e7eaee);
+    background-image: -moz-linear-gradient(to left, #e7eaee, #e7eaee);
+    background-image: -ms-linear-gradient(to left, #e7eaee, #e7eaee);
+    background-image: -o-linear-gradient(to left, #e7eaee, #e7eaee);
+    background-image: linear-gradient(to left, #e7eaee, #e7eaee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0076F9', endColorStr='#0076F9');
+    background-color: transparent;
+    background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    /* text-fill-color: transparent; */
+    -o-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .elementor-7253 .elementor-element.elementor-element-2ac2e59 {
     z-index: 2;
