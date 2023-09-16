@@ -75,6 +75,19 @@
 /* ********************************************************************************** */
 
 @media(min-width: 1440px) {
+    #box {
+        width: 1583px;
+        left: -158.965px;
+        margin-top: -98px;
+        margin-left: 130px;
+
+    }
+}
+
+
+
+
+@media(min-width: 1440px) {
     #ravan {
         margin-top: -180px;
     }
@@ -468,6 +481,8 @@ body.rtl .elementor-7253 .elementor-element.elementor-element-8bdb438 {
     padding-bottom: 0px;
 }
 
+
+
 .elementor-7253 .elementor-element.elementor-element-ae21611>.elementor-widget-container {
     margin: -57px 0px 0px 0px;
     padding: 0px 15px 0px 15px;
@@ -543,6 +558,9 @@ body.rtl .elementor-7253 .elementor-element.elementor-element-2ec42bd {
     color: #67687A;
 }
 
+
+
+
 .elementor-7253 .elementor-element.elementor-element-6bd3ae1 {
     font-size: 17px;
     line-height: 29px;
@@ -586,7 +604,7 @@ body.rtl .elementor-7253 .elementor-element.elementor-element-2ec42bd {
 }
 
 .elementor-7253 .elementor-element.elementor-element-f15650a .elementor-divider {
-    padding-top: 15px;
+    padding-top: -17px;
     padding-bottom: 15px;
 }
 
