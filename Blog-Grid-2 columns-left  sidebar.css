@@ -1,3 +1,16 @@
+.widget_media_gallery .gallery .gallery-item a:before {
+
+    display: none;
+}
+
+
+.widget_media_gallery .gallery .gallery-item a:after {
+
+    display: none;
+}
+
+
+
 .ct-language-switcher1 .current--item label:after {
     /* content: "\f102";
     font-family: Caseicon;
