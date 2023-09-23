@@ -2,10 +2,7 @@
     display: none;
 }
 
-.fa-link:before {
-    /* content: "\f0c1"; */
-    display: none;
-}
+
 
 .ct-language-switcher1 .current--item label:after {
     /* content: "\f102";
@@ -16,12 +13,6 @@
     display: none;
 }
 
-.ct-mailchimp1.style1 .ct-field-group:after {
-    /* content: '\f1d8';
-    font-weight: 400;
-    font-family: "font awesome 5 free"; */
-    display: none;
-}
 
 
 /* ************************************** */

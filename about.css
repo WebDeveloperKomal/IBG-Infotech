@@ -7,12 +7,6 @@
     display: none;
 }
 
-.ct-mailchimp1.style1 .ct-field-group:after {
-    /* content: '\f1d8';
-    font-weight: 400;
-    font-family: "font awesome 5 free"; */
-    display: none;
-}
 
 
 /* ************************************** */
@@ -1493,7 +1487,7 @@
 
 /* ***************************************************************** */
 
-.ct-history-carousel1 .ct-slick-carousel[data-arrows=true] .slick-arrow:before {
-    /* font-size: 10px; */
+/* .ct-history-carousel1 .ct-slick-carousel[data-arrows=true] .slick-arrow:before {
+    font-size: 10px;
     display: none;
-}
+} */

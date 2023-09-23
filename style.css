@@ -166,12 +166,7 @@
     display: none;
 }
 
-.ct-mailchimp1.style1 .ct-field-group:after {
-    /* content: '\f1d8';
-    font-weight: 400;
-    font-family: "font awesome 5 free"; */
-    display: none;
-}
+
 
 /* ************************************** */
 .eicon-close:before {
@@ -2829,4 +2824,17 @@ body.rtl .elementor-7253 .elementor-element.elementor-element-fdd7f88 {
     height: 100%;
     z-index: 150;
     box-shadow: 3px 5px 3px 5px darkgray;
+}
+
+
+
+/* ****************************** */
+
+
+
+.ct-mailchimp1.style1 .ct-field-group:after {
+    /* content: '\f1d8';
+    font-weight: 400;
+    font-family: "font awesome 5 free"; */
+    display: none;
 }
