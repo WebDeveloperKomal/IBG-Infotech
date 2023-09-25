@@ -1487,7 +1487,7 @@
 
 /* ***************************************************************** */
 
-/* .ct-history-carousel1 .ct-slick-carousel[data-arrows=true] .slick-arrow:before {
-    font-size: 10px;
+.ct-history-carousel1 .ct-slick-carousel[data-arrows=true] .slick-arrow:before {
+    /* font-size: 10px; */
     display: none;
-} */
+}
