@@ -14,7 +14,6 @@ function saveContactUsForm() {
         alert("Send mesage successfully!")
     }
 
-
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
     headers.append('Accept', 'application/json');
@@ -25,21 +24,14 @@ function saveContactUsForm() {
         body: JSON.stringify(contactUsForm),
         headers: headers,
     })
+
         .then(response => response.json())
         .then(json => console.log(json))
         .catch(error => console.error('Error:', error));
 
 }
 
-
-
-
-
-
-
-
-
-
+// ************************************************************************
 
 
 
