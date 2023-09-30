@@ -14,6 +14,28 @@
     animation: ct-bouncedelay 1.4s infinite ease-in-out both;
 }
 
+
+
+
+
+.ct-testimonial-grid2 .item--inner {
+    background-color: #efe5e5;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    padding: 40px 28px 30px;
+    -webkit-box-shadow: 0 0 8px rgba(211, 211, 211, .51);
+    -khtml-box-shadow: 0 0 8px rgba(211, 211, 211, .51);
+    -moz-box-shadow: 0 0 8px rgba(211, 211, 211, .51);
+    -ms-box-shadow: 0 0 8px rgba(211, 211, 211, .51);
+    -o-box-shadow: 0 0 8px rgba(211, 211, 211, .51);
+    box-shadow: 0 0 8px rgba(211, 211, 211, .51);
+    margin-bottom: 30px;
+}
+
 /* ************************************************************* */
 
 
@@ -2856,4 +2878,10 @@ body.rtl .elementor-7253 .elementor-element.elementor-element-fdd7f88 {
     font-weight: 400;
     font-family: "font awesome 5 free"; */
     display: none;
+}
+
+
+
+.ct-fancy-box-layout8.style2 .item--icon img {
+    max-height: 81px;
 }
