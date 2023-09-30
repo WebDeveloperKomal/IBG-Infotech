@@ -16,10 +16,8 @@
 
 
 
-
-
 .ct-testimonial-grid2 .item--inner {
-    background-color: #efe5e5;
+    background-color: #edf0f4;
     -webkit-border-radius: 6px;
     -khtml-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -32,7 +30,7 @@
     -moz-box-shadow: 0 0 8px rgba(211, 211, 211, .51);
     -ms-box-shadow: 0 0 8px rgba(211, 211, 211, .51);
     -o-box-shadow: 0 0 8px rgba(211, 211, 211, .51);
-    box-shadow: 0 0 8px rgba(211, 211, 211, .51);
+    box-shadow: 3px 5px 3px 5px darkgray;
     margin-bottom: 30px;
 }
 
