@@ -8,13 +8,13 @@ function saveContactForm() {
         message: document.getElementById('message').value
     }
 
-
+    
     console.log(JSON.stringify(contactform));
 
     if (contactform != null) {
         alert("message sent successfully!")
     }
-
+    
 
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');

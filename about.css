@@ -1,3 +1,80 @@
+/* #ct-header-elementor .elementor-widget-wrap {
+    position: static;
+    margin-top: -3px;
+}
+
+
+.elementor-4195 .elementor-element.elementor-element-2ce2422c {
+    padding: 12px 0px 12px 0px;
+    margin-top: -31px;
+}
+
+#ct-header-elementor .elementor-widget-wrap {
+    position: static;
+    margin-top: 16px;
+}
+
+.elementor * {
+    box-sizing: border-box;
+    margin-top: -4px;
+}
+
+#call {
+    margin-top: 20px;
+}
+
+#location {
+    margin-top: 20px;
+}
+
+.elementor-4195 .elementor-element.elementor-element-36ac7d47 .elementor-divider-separator {
+    width: 1px;
+    margin-top: 20px;
+}
+
+.elementor-4195 .elementor-element.elementor-element-4c7cac1 .elementor-divider-separator {
+    width: 1px;
+    margin-top: 20px;
+}
+
+#address {
+    margin-top: 20px;
+}
+
+.elementor-4195 .elementor-element.elementor-element-1ee6724b .elementor-divider-separator {
+    width: 1px;
+    margin-top: 20px;
+}
+
+.ct_icon-5249c915-0 .elementor-repeater-item-7eacdc1 {
+    margin-top: 14px;
+} */
+
+
+
+/* ************************************************************************************************ */
+
+
+.ct-spinner5>div {
+    margin: 0 8px;
+    width: 20px;
+    height: 20px;
+    background-color: #1353b9;
+    -webkit-border-radius: 100%;
+    -khtml-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: ct-bouncedelay 1.4s infinite ease-in-out both;
+    animation: ct-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+
+/* *********************************************************************** */
+
+
 .ct-language-switcher1 .current--item label:after {
     /* content: "\f102";
     font-family: Caseicon;

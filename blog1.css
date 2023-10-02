@@ -4,6 +4,25 @@
 } */
 
 
+.ct-spinner5>div {
+    margin: 0 8px;
+    width: 20px;
+    height: 20px;
+    background-color: #1353b9;
+    -webkit-border-radius: 100%;
+    -khtml-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: ct-bouncedelay 1.4s infinite ease-in-out both;
+    animation: ct-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+/* *********************************************************************** */
+
+
 
 .caseicon-angle-arrow-right:before {
     /* content: "\f104"; */
