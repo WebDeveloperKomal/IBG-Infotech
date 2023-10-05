@@ -1,3 +1,20 @@
+.phone-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 90px;
+    left: 10px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    left: 10px;
+}
+
+
 /* #ct-header-elementor .elementor-widget-wrap {
     position: static;
     margin-top: -3px;
@@ -1480,6 +1497,9 @@
 
 /* ********************************************************************************************* */
 
+
+
+
 .ct-main-menu .sub-menu li.menu-item-has-children>a:after {
     /* content: "\f104";
     font-family: Caseicon;
@@ -1567,4 +1587,88 @@
 .ct-history-carousel1 .ct-slick-carousel[data-arrows=true] .slick-arrow:before {
     /* font-size: 10px; */
     display: none;
+}
+
+
+
+
+/* *********************************************************************** */
+
+
+.ct-menu-toggle:before {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -khtml-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 300ms linear 0ms;
+    -khtml-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    -o-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms; */
+    display: none;
+}
+
+
+
+
+.ct-menu-toggle {
+    position: absolute;
+    top: 6px;
+    height: 30px;
+    right: 0;
+    width: 30px;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 10px;
+    -webkit-transition: all 300ms linear 0ms;
+    -khtml-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    -o-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+    color: rgba(34, 34, 34, .67);
+    border: 1px solid rgba(34, 34, 34, 8%);
+}
+
+#dash1 {
+    margin-left: 141px;
+}
+
+
+#dash2 {
+    margin-left: 120px;
+    margin-top: 7px;
+}
+
+
+#dash3 {
+    margin-left: 125px;
+    margin-top: 7px;
+}
+
+#dash4 {
+    margin-left: 123px;
+    margin-top: 7px;
+}
+
+
+#dash5 {
+    margin-left: 145px;
+    margin-top: 7px;
+}
+
+#dash6 {
+    margin-left: 108px;
+    margin-top: 7px;
 }
