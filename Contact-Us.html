@@ -3,10 +3,6 @@
 
 <head>
 
-    <!-- <script src="email.js"></script> -->
-    <script src="Contact-Us.js"></script>
-    <!-- <script src="index.js"></script> -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="//gmpg.org/xfn/11">
@@ -16,12 +12,12 @@
     <!-- contact us css file -->
     <link rel="stylesheet" href="Contact-Us.css">
 
+    <script src="add-contact-us.js"></script>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 
     <meta name='robots' content='max-image-preview:large' />
 
@@ -4869,31 +4865,6 @@
 
 
 
-                                                <!-- <div class="elementor-element elementor-element-f888ce6 elementor-widget__width-auto elementor-widget elementor-widget-ct_icon_search"
-                                                    data-id="f888ce6" data-element_type="widget"
-                                                    data-widget_type="ct_icon_search.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="ct-search-form1">
-                                                            <form role="search" method="get" action="index.html"> <input
-                                                                    type="text" placeholder="Search..." name="s"
-                                                                    class="search-field" /> <button type="submit"
-                                                                    class="search-submit">
-
-
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                        height="16" fill="currentColor"
-                                                                        class="bi bi-search" viewBox="0 0 16 16">
-                                                                        <path
-                                                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                                                    </svg>
-
-
-                                                                </button></form>
-                                                        </div>
-                                                    </div>
-                                                </div> -->
-
-
                                                 <div class="elementor-element elementor-element-537336e2 elementor-widget__width-auto elementor-widget elementor-widget-ct_language_switcher"
                                                     data-id="537336e2" data-element_type="widget"
                                                     data-widget_type="ct_language_switcher.default">
@@ -6369,14 +6340,13 @@
                                                                                                                     class="wpcf7-form-control-wrap"
                                                                                                                     data-name="your-name"><input
                                                                                                                         size="40"
-                                                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                                                         aria-required="true"
                                                                                                                         id="name"
                                                                                                                         aria-invalid="false"
                                                                                                                         placeholder="Your name*"
                                                                                                                         value=""
                                                                                                                         type="text"
-                                                                                                                        name="your-name" /></span>
+                                                                                                                        name="name" /></span>
                                                                                                             </p>
                                                                                                         </div>
 
@@ -6391,14 +6361,13 @@
                                                                                                                     class="wpcf7-form-control-wrap"
                                                                                                                     data-name="your-email"><input
                                                                                                                         size="40"
-                                                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                                                                                                                         aria-required="true"
                                                                                                                         id="email"
                                                                                                                         aria-invalid="false"
                                                                                                                         placeholder="Mail*"
                                                                                                                         value=""
                                                                                                                         type="email"
-                                                                                                                        name="your-email" /></span>
+                                                                                                                        name="email" /></span>
                                                                                                             </p>
                                                                                                         </div>
                                                                                                     </div>
@@ -6416,11 +6385,11 @@
                                                                                                                         size="40"
                                                                                                                         class="wpcf7-form-control wpcf7-text"
                                                                                                                         aria-invalid="false"
-                                                                                                                        id="phoneNumber"
+                                                                                                                        id="phone"
                                                                                                                         placeholder="Your phone"
                                                                                                                         value=""
                                                                                                                         type="text"
-                                                                                                                        name="your-phone" /></span>
+                                                                                                                        name="phone" /></span>
                                                                                                             </p>
                                                                                                         </div>
 
@@ -6437,11 +6406,10 @@
 
 
                                                                                                                     <select
-                                                                                                                        class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
                                                                                                                         aria-required="true"
                                                                                                                         id="services"
                                                                                                                         aria-invalid="false"
-                                                                                                                        name="your-service">
+                                                                                                                        name="services">
 
                                                                                                                         <option
                                                                                                                             value="Select Service">
@@ -6478,12 +6446,11 @@
                                                                                                                     data-name="your-message"><textarea
                                                                                                                         cols="40"
                                                                                                                         rows="10"
-                                                                                                                        class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
                                                                                                                         aria-required="true"
-                                                                                                                        id="message"
+                                                                                                                        id="text"
                                                                                                                         aria-invalid="false"
                                                                                                                         placeholder="Type message*"
-                                                                                                                        name="your-message"></textarea></span>
+                                                                                                                        name="text"></textarea></span>
                                                                                                             </p>
                                                                                                         </div>
 
@@ -6494,7 +6461,7 @@
                                                                                                             <p><button
                                                                                                                     type="submit"
                                                                                                                     class="wpcf7-submit btn"
-                                                                                                                    onclick="saveContactForm2(); reset(); return false;">Send
+                                                                                                                    onclick="saveData();">Send
                                                                                                                     message</button>
                                                                                                             </p>
                                                                                                         </div>
