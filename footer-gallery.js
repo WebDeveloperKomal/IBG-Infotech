@@ -76,6 +76,64 @@ function saveData() {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    imageData();
+});
+
+
+function imageData() {
+    fetch('http://localhost:8181/ibg-infotech/auth/get-all-galleries', {
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + jwtToken,
+        },
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Assuming data is an array of objects, each object representing a footer item
+            const footerItems = data.data;
+
+            // Find the elements you want to update
+            const anchorTag = document.getElementById('dynamicImageAnchor');
+            const nameElement = document.getElementById('ping_now');
+            const textElement = document.getElementById('text');
+            const openHoursElement = document.getElementById('openHours');
+            const footerTitleElement = document.getElementById('footerTitle');
+
+            const firstFooterItem = footerItems[0];
+
+            // Update the href and src attributes with the fetched data
+            anchorTag.href = '#'; // Update href if needed
+            anchorTag.querySelector('img').src = 'data:image/jpeg;base64,' + firstFooterItem.image;
+            anchorTag.querySelector('img').alt = '';
+
+            // Update additional fields
+            nameElement.textContent = firstFooterItem.ping_now;
+            textElement.textContent = firstFooterItem.text;
+            // Remove HTML tags from openHours content
+            openHoursElement.innerHTML = firstFooterItem.openHours; // Update openHours content with HTML
+            openHoursElement.textContent = openHoursElement.innerText; // Remove HTML tags
+
+            footerTitleElement.textContent = firstFooterItem.footer_title;
+        })
+        .catch(error => {
+            console.error('Error fetching image data:', error);
+        });
+}
+
+// Call fetchImageData() when the page loads
+window.onload = function () {
+    fetchImageData();
+};
+
+
+
+
 // -------------------------------get the data----------------------------------------------
 
 

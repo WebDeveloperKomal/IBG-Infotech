@@ -1,3 +1,5 @@
+
+
 // -----------------------------save the data--------------------------------------
 
 function saveData() {
@@ -11,7 +13,6 @@ function saveData() {
     if (imageFile) {
         formData.append('image', imageFile);
     }
-
 
     var jwtToken = localStorage.getItem('jwtToken');
 
@@ -65,8 +66,105 @@ function saveData() {
 }
 
 
-// ------------------------------get all the data-------------------------------------
 
+document.addEventListener('DOMContentLoaded', function () {
+    fetchImageData();
+    fetchData();
+});
+
+// Function to fetch image data from the server API
+function fetchData() {
+    fetch('http://localhost:8181/ibg-infotech/auth/get-all-galleries', {
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + jwtToken,
+        },
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const imagesData = data.data; // Assuming data is an array of image objects
+
+            // Loop through the fetched images and update the src attributes
+            imagesData.forEach((imageData, index) => {
+                const imageId = index + 1; // Update the id accordingly
+                const imageSrc = 'data:image/jpeg;base64,' + imageData.upload_image;
+
+                // Update the src attribute of the corresponding image
+                const imageElement = document.getElementById(`image-${imageId}`);
+                if (imageElement) {
+                    imageElement.src = imageSrc;
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching image data:', error);
+        });
+}
+
+// Call fetchImageData() when the page loads
+window.onload = function () {
+    fetchData();
+};
+
+
+
+function fetchImageData() {
+    fetch('http://localhost:8181/ibg-infotech/auth/get-all-footer', {
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + jwtToken,
+        },
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Assuming data is an array of objects, each object representing a footer item
+            const footerItems = data.data;
+
+            // Find the elements you want to update
+            const anchorTag = document.getElementById('dynamicImageAnchor');
+            const nameElement = document.getElementById('ping_now');
+            const textElement = document.getElementById('text');
+            const openHoursElement = document.getElementById('openHours');
+            const footerTitleElement = document.getElementById('footerTitle');
+
+            const firstFooterItem = footerItems[0];
+
+            // Update the href and src attributes with the fetched data
+            anchorTag.href = '#'; // Update href if needed
+            anchorTag.querySelector('img').src = 'data:image/jpeg;base64,' + firstFooterItem.image;
+            anchorTag.querySelector('img').alt = '';
+
+            // Update additional fields
+            nameElement.textContent = firstFooterItem.ping_now;
+            textElement.textContent = firstFooterItem.text;
+            // Remove HTML tags from openHours content
+            openHoursElement.innerHTML = firstFooterItem.openHours; // Update openHours content with HTML
+            openHoursElement.textContent = openHoursElement.innerText; // Remove HTML tags
+
+            footerTitleElement.textContent = firstFooterItem.footer_title;
+        })
+        .catch(error => {
+            console.error('Error fetching image data:', error);
+        });
+}
+
+// Call fetchImageData() when the page loads
+window.onload = function () {
+    fetchImageData();
+};
+
+
+// ------------------------------get all the data-------------------------------------
 
 var jwtToken = localStorage.getItem('jwtToken');
 
@@ -109,7 +207,6 @@ function arrayBufferToBase64(buffer) {
 }
 
 
-
 function populateTable(data) {
     const tableBody = document.getElementById('dataTableBody');
     tableBody.innerHTML = '';
@@ -119,7 +216,7 @@ function populateTable(data) {
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${index + 1}</td>
-                <td>${item.ping_now}</td>
+                <td>${item.name}</td>
                 <td><img src="data:image/jpeg;base64,${item.image}" width="100" height="100"></td>
                 <td>
                     <a class="edit-btn" data-id="${item.id}"><i class="ti-pencil"></i>Edit</a>
@@ -167,6 +264,8 @@ function populateTable(data) {
         console.error('Data received is not an array:', data);
     }
 }
+
+
 
 
 // ----------------------------------------delete by id-----------------------------------------------
