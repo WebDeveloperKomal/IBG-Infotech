@@ -6,7 +6,7 @@ function saveData() {
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
         services: document.getElementById('services').value,
-        text: document.getElementById('text').value,
+        text: document.getElementById('text').value
     };
 
 
@@ -14,13 +14,8 @@ function saveData() {
 
     console.log('Request Data:', JSON.stringify(saveData));
 
-    if (!saveData.name || !saveData.phone || !saveData.email) {
+    if (!saveData.name || !saveData.email || !saveData.phone || !saveData.services || !saveData.text) {
         alert('Please fill in all required fields.');
-        return;
-    }
-
-    if (!jwtToken) {
-        alert('JWT token is missing. Please log in again.');
         return;
     }
 
@@ -52,7 +47,7 @@ function saveData() {
                 document.getElementById('phone').value = '';
                 document.getElementById('services').value = '';
                 document.getElementById('text').value = '';
-                // window.location.href = 'Contact-Us.html';
+                window.location.href = 'Contact-Us.html';
 
             });
         })
