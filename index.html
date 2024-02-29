@@ -3,18 +3,24 @@
 
 <head>
 
-    <script src="index.js"></script>
-    <!-- <script src="email.js"></script> -->
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+
+    <meta name="generator" content="WordPress 6.3.1" />
+    <meta name="generator" content="WooCommerce 8.1.1" />
+    <meta name="generator"
+        content="Elementor 3.16.4; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+    <meta name="generator"
+        content="Powered by Slider Revolution 6.6.16 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+
 
     <link rel="profile" href="//gmpg.org/xfn/11">
 
-    <script src="footer-form.js"></script>
-
-    <title>IBG intech | Home</title>
+    <title>IBG infotech | Home</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -23,14 +29,12 @@
 
     <!-- css file index.html -->
     <link rel="stylesheet" href="index.css">
+    <script src="footer-form.js"></script>
 
     <meta name='robots' content='max-image-preview:large' />
     <link rel='dns-prefetch' href='//stats.wp.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-    <link rel="alternate" type="application/rss+xml" title="Itfirm &raquo; Feed"
-        href="https://demo.casethemes.net/itfirm/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="Itfirm &raquo; Comments Feed"
-        href="https://demo.casethemes.net/itfirm/comments/feed/" />
+
     <script type="text/javascript"> window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/demo.casethemes.net\/itfirm\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1" } };
         /*! This file is auto-generated */
         !function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
@@ -49,15 +53,7 @@
             padding: 0 !important;
         }
     </style>
-    <link rel='stylesheet' id='wp-block-library-css'
-        href='https://demo.casethemes.net/itfirm/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='wc-blocks-vendors-style-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.min.css?ver=10.9.3'
-        type='text/css' media='all' />
-    <link rel='stylesheet' id='wc-all-blocks-style-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-all-blocks-style.min.css?ver=10.9.3'
-        type='text/css' media='all' />
+
     <style id='classic-theme-styles-inline-css' type='text/css'>
         /*! This file is auto-generated */
         .wp-block-button__link {
@@ -443,68 +439,7 @@
         }
     </style>
 
-
-    <link rel='stylesheet' id='redux-extendify-styles-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/redux-framework/redux-core/assets/css/redux-extendify-styles.min.css?ver=4.4.7'
-        type='text/css' media='all' />
-
-
-    <link rel='stylesheet' id='ct-main-css-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/case-theme-core/assets/css/ct-main-css.min.css?ver=1.0.0'
-        type='text/css' media='all' />
-
-
-
-    <link rel='stylesheet' id='progressbar-lib-css-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/case-theme-core/assets/css/lib/progressbar.min.css?ver=0.7.1'
-        type='text/css' media='all' />
-
-
-    <link rel='stylesheet' id='oc-css-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/case-theme-core/assets/css/lib/owl.carousel.min.css?ver=2.2.1'
-        type='text/css' media='all' />
-
-
-    <link rel='stylesheet' id='ct-slick-css-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/case-theme-core/assets/css/lib/ct-slick-css.min.css?ver=1.0.0'
-        type='text/css' media='all' />
-
-
-    <link rel='stylesheet' id='ct-font-awesome-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/case-theme-core/assets/plugin/font-awesome/css/font-awesome.min.css?ver=4.7.0'
-        type='text/css' media='all' />
-
-
-    <link rel='stylesheet' id='remodal-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/case-theme-user/acess/css/remodal.min.css?ver=6.3.1'
-        type='text/css' media='all' />
-
-
-    <link rel='stylesheet' id='remodal-default-theme-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/case-theme-user/acess/css/remodal-default-theme.min.css?ver=6.3.1'
-        type='text/css' media='all' />
-
-
-    <link rel='stylesheet' id='contact-form-7-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/contact-form-7/includes/css/contact-form-7.min.css?ver=5.8'
-        type='text/css' media='all' />
-
-
-    <link rel='stylesheet' id='woocommerce-layout-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.min.css?ver=8.1.1'
-        type='text/css' media='all' />
-
-
-    <link rel='stylesheet' id='woocommerce-smallscreen-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.min.css?ver=8.1.1'
-        type='text/css' media='only screen and (max-width: 768px)' />
-
-
-    <link rel='stylesheet' id='woocommerce-general-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/plugins/woocommerce/assets/css/woocommerce-general.min.css?ver=8.1.1'
-        type='text/css' media='all' />
-
-
+    <!-- unwanted link remove here -->
 
     <style id='woocommerce-inline-inline-css' type='text/css'>
         .woocommerce form .form-row .required {
@@ -705,9 +640,7 @@
             background-image: linear-gradient(90deg, #1061df 0%, #00d8ff 50%, #1061df);
         }
     </style>
-    <link rel='stylesheet' id='itfirm-style-css'
-        href='https://demo.casethemes.net/itfirm/wp-content/themes/itsoft/itfirm-style.min.css?ver=6.3.1'
-        type='text/css' media='all' />
+
 
 
     <link rel='stylesheet' id='itfirm-google-fonts-css'
@@ -788,12 +721,6 @@
     <script type="text/template"
         id="tmpl-variation-template"><div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div><div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div><div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div> </script>
 
-
-    <script type="text/template"
-        id="tmpl-unavailable-variation-template"><p>Sorry, this product is unavailable. Please choose a different combination.</p> </script>
-
-
-
     <script type='text/javascript'
         src='https://demo.casethemes.net/itfirm/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2'
         id='wp-polyfill-inert-js'></script>
@@ -843,19 +770,7 @@
 
     <link rel="alternate" type="application/json" href="https://demo.casethemes.net/itfirm/wp-json/wp/v2/pages/7253" />
 
-
-    <link rel="EditURI" type="application/rsd+xml" title="RSD"
-        href="https://demo.casethemes.net/itfirm/xmlrpc.php?rsd" />
-
-
-    <meta name="generator" content="WordPress 6.3.1" />
-
-    <meta name="generator" content="WooCommerce 8.1.1" />
-    <link rel="canonical" href="https://demo.casethemes.net/itfirm/home-8/" />
-
-
-    <link rel='shortlink' href='https://demo.casethemes.net/itfirm/?p=7253' />
-
+    <link rel="canonical" href="https://ibginfotech.com/index.html" />
 
     <link rel="alternate" type="application/json+oembed"
         href="https://demo.casethemes.net/itfirm/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.casethemes.net%2Fitfirm%2Fhome-8%2F" />
@@ -874,11 +789,6 @@
         </style>
     </noscript>
 
-
-    <meta name="generator"
-        content="Elementor 3.16.4; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
-    <meta name="generator"
-        content="Powered by Slider Revolution 6.6.16 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
 
     <script>function setREVStartSize(e) {
             //window.requestAnimationFrame(function() {
@@ -1045,14 +955,6 @@
 
 
     <div id="page" class="site">
-        <div id="ct-loadding" class="ct-loader style5" style="color: rgb(18, 39, 184);">
-            <div class="ct-spinner5">
-                <div class="bounce1"></div>
-                <div class="bounce2"></div>
-                <div class="bounce3"></div>
-            </div>
-        </div>
-
 
         <div class="ct-page-loading-bg active"></div>
 
@@ -1438,7 +1340,8 @@
                                                     <div class="elementor-widget-container">
                                                         <div id="ct_logo-fa6e448" class="ct-logo  style1">
                                                             <div class="ct-inline-css" data-css="
-     "></div> <a href="#"> <img width="497" height="203" src="final logo.png" class="attachment-full" alt="" /> </a>
+     "></div> <a href="#"> <img width="497" height="203" src="infotech black logo.png" class="attachment-full"
+                                                                    alt="infotech logo" /> </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1563,9 +1466,6 @@
                                                                         </ul>
                                                                     </li>
 
-
-
-
                                                                     <li id="menu-item-46"
                                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-46">
                                                                         <a id="header-part"><span id="header-part-span"
@@ -1586,8 +1486,6 @@
                                                                                 class="ct-menu--line"></span></a>
 
 
-
-
                                                                         <ul class="sub-menu">
                                                                             <li id="menu-item-639"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-639">
@@ -1598,10 +1496,6 @@
                                                                                         class="ct-menu--plus"></span><span
                                                                                         class="ct-menu--line"></span></a>
                                                                             </li>
-
-
-
-
 
                                                                         </ul>
                                                                     </li>
@@ -1633,7 +1527,7 @@
                                                                         <ul class="sub-menu">
                                                                             <li id="menu-item-593"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-593">
-                                                                                <a href="Portfolio Grid.html"><span
+                                                                                <a href="PortfolioGrid.html"><span
                                                                                         class="ct-menu-item"><span
                                                                                             class="ct-item--number"><span></span></span>Our
                                                                                         Portfolio
@@ -1674,8 +1568,7 @@
                                                                         <ul class="sub-menu">
                                                                             <li id="menu-item-208"
                                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-208">
-                                                                                <a
-                                                                                    href="Blog-Grid-2 columns-left  sidebar.html"><span
+                                                                                <a href="blog.html"><span
                                                                                         class="ct-menu-item"><span
                                                                                             class="ct-item--number"><span></span></span>Blogs
                                                                                     </span><span
@@ -1920,20 +1813,6 @@
                                                 </div>
 
 
-
-                                                <!-- <div class="ct-sidebar-cart1 h-btn-cart">
-
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        style="color: white;" fill="currentColor"
-                                                        class="bi bi-basket-fill" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
-                                                    </svg>
-
-                                                    <span class="widget_cart_counter">0</span>
-                                                </div> -->
-                                                <!-- </div> -->
-                                                <!-- </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1965,7 +1844,8 @@
                                                 <div class="elementor-widget-container">
                                                     <div id="ct_logo-81ecfaf" class="ct-logo  style1">
                                                         <div class="ct-inline-css" data-css="
-     "></div> <a href="#"> <img width="497" height="203" src="final logo.png" class="attachment-full" alt="" /> </a>
+     "></div> <a href="#"> <img width="497" height="203" src="infotech black logo.png" class="attachment-full"
+                                                                alt="infotech logo" /> </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2157,7 +2037,7 @@
                                                                     <ul class="sub-menu">
                                                                         <li
                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-593">
-                                                                            <a href="Portfolio Grid.html"><span
+                                                                            <a href="PortfolioGrid.html"><span
                                                                                     class="ct-menu-item"><span
                                                                                         class="ct-item--number"><span></span></span>Our
                                                                                     Portfolio
@@ -2197,8 +2077,7 @@
                                                                     <ul class="sub-menu">
                                                                         <li
                                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-208">
-                                                                            <a
-                                                                                href="Blog-Grid-2 columns-left  sidebar.html"><span
+                                                                            <a href="blog.html"><span
                                                                                     class="ct-menu-item"><span
                                                                                         class="ct-item--number"><span></span></span>Blogs
                                                                                 </span><span
@@ -2434,10 +2313,6 @@
                                             </div>
 
 
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -2453,14 +2328,13 @@
                 <div id="ct-header" class="ct-header-main">
                     <div class="container">
                         <div class="row">
-                            <div class="ct-header-branding"> <a class="logo-mobile" href="index.html" title="Itfirm"
-                                    rel="home">
+                            <div class="ct-header-branding"> <a class="logo-mobile" href="index.html" rel="home">
 
-                                    <img src="final logo.png" alt="Itfirm" /></a>
+                                    <img src="infotech black logo.png" alt="infotech logo" /></a>
 
-                                <a class="logo-light" href="index.html" title="Itfirm" rel="home">
+                                <a class="logo-light" href="index.html" rel="home">
 
-                                    <img src="final logo.png" alt="Itfirm" /></a>
+                                    <img src="infotech black logo.png" alt="infotech logo" /></a>
                             </div>
 
 
@@ -2471,16 +2345,16 @@
                                 <nav class="ct-main-navigation">
                                     <div class="ct-main-navigation-inner">
                                         <div class="ct-logo-mobile"> <a class="logo-mobile" href="index.html"
-                                                title="Itfirm" rel="home">
+                                                rel="home">
 
-                                                <img src="final logo.png" alt="Itfirm" /></a>
-
-
-                                            <a class="logo-light" href="index.html" title="Itfirm" rel="home">
+                                                <img src="infotech black logo.png" alt="infotech logo" /></a>
 
 
+                                            <a class="logo-light" href="index.html" rel="home">
 
-                                                <img src="final logo.png" alt="Itfirm" /></a>
+
+
+                                                <img src="infotech black logo.png" alt="infotech logo" /></a>
                                         </div>
 
 
@@ -2573,7 +2447,7 @@
                                                 <ul class="sub-menu">
                                                     <li
                                                         class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-593">
-                                                        <a href="Portfolio Grid.html"><span>Our Portfolio
+                                                        <a href="PortfolioGrid.html"><span>Our Portfolio
                                                             </span></a>
                                                     </li>
 
@@ -2595,7 +2469,7 @@
                                                 <ul class="sub-menu">
                                                     <li
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-208">
-                                                        <a href="Blog-Grid-2 columns-left  sidebar.html"><span>Blogs
+                                                        <a href="blog.html"><span>Blogs
                                                             </span></a>
                                                     </li>
                                                 </ul>
@@ -2732,8 +2606,6 @@
                                                                                 </div>
                                                                             </div>
 
-
-
                                                                             <div class="elementor-element elementor-element-3f6eedf elementor-widget elementor-widget-ct_menu_item"
                                                                                 data-id="3f6eedf"
                                                                                 data-element_type="widget"
@@ -2744,8 +2616,6 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-
-
 
 
                                                                     <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-92e2e63 ct-column-none col-offset-none col-color-offset-none"
@@ -2841,11 +2711,6 @@
                                                                 <div class="elementor-widget-container">
                                                                     <div class="wp-block-themepunch-revslider">
 
-
-
-
-
-
                                                                         <!-- START Slider 6 REVOLUTION SLIDER 6.6.16 -->
                                                                         <p class="rs-p-wp-fix"></p>
                                                                         <rs-module-wrap id="rev_slider_8_1_wrapper"
@@ -2863,12 +2728,14 @@
                                                                                         data-in="o:0;"
                                                                                         data-out="a:false;">
                                                                                         <img decoding="async"
-                                                                                            src="Homepage-1.jpg" alt=""
+                                                                                            src="Homepage-1.jpg"
+                                                                                            alt="slider image1"
                                                                                             title="h8-bg-slider1"
                                                                                             class="rev-slidebg tp-rs-img rs-lazyload"
                                                                                             data-lazyload="Homepage-1.jpg"
                                                                                             data-panzoom="d:10000;ss:100%;se:132;"
                                                                                             data-no-retina>
+
                                                                                         <rs-group
                                                                                             id="slider-8-slide-16-layer-4"
                                                                                             data-type="group"
@@ -2913,29 +2780,12 @@
                                                                                                 data-frame_0="y:50;"
                                                                                                 data-frame_1="st:3600;sp:1000;sR:3600;"
                                                                                                 data-frame_999="o:0;st:w;sR:4400;"
-                                                                                                style="z-index:10;font-family:'Roboto';">
-                                                                                                <div id="slider-text3">
+                                                                                                style="z-index:10;font-family:'Roboto'; margin-top: -140px;">
+                                                                                                <div id="text3">
 
-                                                                                                    Unlock
-                                                                                                    the full
-                                                                                                    potential of your
-                                                                                                    business
-                                                                                                    with an IT service
-                                                                                                    that
-                                                                                                    supports your growth
-
-                                                                                                    plans.
-                                                                                                    At IBG Infotech, we
-                                                                                                    closely
-                                                                                                    examine your
-                                                                                                    existing
-                                                                                                    systems,
-                                                                                                    collaborating with
-                                                                                                    you
-                                                                                                    to
-                                                                                                    identify areas
                                                                                                 </div>
                                                                                             </rs-layer>
+
                                                                                             <rs-layer
                                                                                                 id="slider-8-slide-16-layer-9"
                                                                                                 class="kp"
@@ -3002,10 +2852,14 @@
                                                                                                         Microsoft
                                                                                                         Partner
                                                                                                     </div>
+
+                                                                                                    
                                                                                                 </div>
                                                                                             </rs-layer>
+
+
                                                                                             <rs-layer
-                                                                                                id="slider-8-slide-16-layer-5"
+                                                                                                id="slider-8-slide-18-layer-5"
                                                                                                 data-type="text"
                                                                                                 data-xy="" data-pos="a"
                                                                                                 data-text="w:normal;s:100,100,48,36;l:80,120,60,44;fw:700;"
@@ -3018,12 +2872,11 @@
                                                                                                 data-frame_999="o:0;st:w;sR:4600;"
                                                                                                 style="z-index:6;font-family:'Fira Sans';">
                                                                                                 <div id="slider-text1">
-                                                                                                    <p>Empowering
-                                                                                                        Innovation</p>
-                                                                                                    <br>
-                                                                                                    <p>for Success</p>
+                                                                                                    <!-- Dynamic content will be loaded here -->
+
                                                                                                 </div>
                                                                                             </rs-layer>
+
                                                                                         </rs-group>
                                                                                         <rs-layer
                                                                                             id="slider-8-slide-16-layer-0"
@@ -3039,7 +2892,7 @@
                                                                                             style="z-index:7;"><img
                                                                                                 decoding="async"
                                                                                                 src="h8-shape2.png"
-                                                                                                alt=""
+                                                                                                alt="shape1"
                                                                                                 class="tp-rs-img rs-lazyload"
                                                                                                 width="447" height="677"
                                                                                                 data-lazyload="h8-shape2.png"
@@ -3059,7 +2912,7 @@
                                                                                             style="z-index:6;"><img
                                                                                                 decoding="async"
                                                                                                 src="h8-shape1.png"
-                                                                                                alt=""
+                                                                                                alt="shape"
                                                                                                 class="tp-rs-img rs-lazyload"
                                                                                                 width="625" height="561"
                                                                                                 data-lazyload="h8-shape1.png"
@@ -3081,7 +2934,7 @@
                                                                                             <img decoding="async"
                                                                                                 style="margin-left: -80px;"
                                                                                                 src="h8-shape3.png"
-                                                                                                alt=""
+                                                                                                alt="shape"
                                                                                                 class="tp-rs-img rs-lazyload"
                                                                                                 width="403" height="175"
                                                                                                 data-lazyload="h8-shape3.png"
@@ -3112,10 +2965,6 @@
                                                                                             </div>
                                                                                         </rs-layer>
 
-
-
-
-
                                                                                         <!-- ******************************************************************************* -->
                                                                                         <rs-layer
                                                                                             id="slider-8-slide-16-layer-12"
@@ -3140,7 +2989,8 @@
                                                                                         data-in="o:0;"
                                                                                         data-out="a:false;"> <img
                                                                                             decoding="async"
-                                                                                            src="Homepage-3.jpg" alt=""
+                                                                                            src="Homepage-3.jpg"
+                                                                                            alt="slider3"
                                                                                             title="h8-bg-slider2"
                                                                                             width="1920" height="1040"
                                                                                             class="rev-slidebg tp-rs-img rs-lazyload"
@@ -3192,9 +3042,9 @@
                                                                                                 data-frame_0="y:50;"
                                                                                                 data-frame_1="st:3600;sp:1000;sR:3600;"
                                                                                                 data-frame_999="o:0;st:w;sR:4400;"
-                                                                                                style="z-index:10;font-family:'Roboto';">
-                                                                                                <div id="slider-text3">
-
+                                                                                                style="z-index:10;font-family:'Roboto'; margin-top: -140px;">
+                                                                                                <div id="title-head2">
+                                                                                                    <!--
                                                                                                     Unlock
                                                                                                     the full
                                                                                                     potential of your
@@ -3212,7 +3062,7 @@
                                                                                                     collaborating with
                                                                                                     you
                                                                                                     to
-                                                                                                    identify areas
+                                                                                                    identify areas -->
                                                                                                 </div>
 
                                                                                             </rs-layer>
@@ -3251,9 +3101,11 @@
                                                                                             </rs-layer>
 
 
-
-                                                                                            <!--
-     --><rs-layer id="slider-8-slide-17-layer-6" data-type="text" data-xy="yo:280px,280px,140px,100px;" data-pos="a"
+                                                                                            <rs-layer
+                                                                                                id="slider-8-slide-17-layer-6"
+                                                                                                data-type="text"
+                                                                                                data-xy="yo:280px,280px,140px,100px;"
+                                                                                                data-pos="a"
                                                                                                 data-text="w:normal;s:20,20,16,16;l:30;"
                                                                                                 data-rsp_o="off"
                                                                                                 data-rsp_bd="off"
@@ -3277,7 +3129,6 @@
                                                                                                             <path
                                                                                                                 d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
                                                                                                         </svg>
-
                                                                                                         Microsoft
                                                                                                         Partner
                                                                                                     </div>
@@ -3285,11 +3136,11 @@
                                                                                             </rs-layer>
 
 
-
-
-
-                                                                                            <!--
-     --><rs-layer id="slider-8-slide-17-layer-5" data-type="text" data-xy="" data-pos="a" data-text="w:normal;s:100,100,48,36;l:80,120,60,44;fw:700;"
+                                                                                            <rs-layer
+                                                                                                id="slider-8-slide-18-layer-5"
+                                                                                                data-type="text"
+                                                                                                data-xy="" data-pos="a"
+                                                                                                data-text="w:normal;s:100,100,48,36;l:80,120,60,44;fw:700;"
                                                                                                 data-rsp_o="off"
                                                                                                 data-rsp_bd="off"
                                                                                                 data-frame_0="o:1;"
@@ -3298,14 +3149,11 @@
                                                                                                 data-frame_1_chars="e:power4.inOut;d:10;oZ:-50;"
                                                                                                 data-frame_999="o:0;st:w;sR:4600;"
                                                                                                 style="z-index:6;font-family:'Fira Sans';">
-                                                                                                <div id="slider-text1">
-                                                                                                    <p>Empowering
-                                                                                                        Innovation</p>
-                                                                                                    <br>
-                                                                                                    <p>for Success</p>
+                                                                                                <div id="title-text2">
+                                                                                                    <!-- Dynamic content will be loaded here -->
+
                                                                                                 </div>
                                                                                             </rs-layer>
-
 
 
 
@@ -3322,7 +3170,7 @@
                                                                                             style="z-index:7;"><img
                                                                                                 decoding="async"
                                                                                                 src="h8-shape2.png"
-                                                                                                alt=""
+                                                                                                alt="shape"
                                                                                                 class="tp-rs-img rs-lazyload"
                                                                                                 width="447" height="677"
                                                                                                 data-lazyload="h8-shape2.png"
@@ -3343,7 +3191,7 @@
                                                                                             style="z-index:6;"><img
                                                                                                 decoding="async"
                                                                                                 src="h8-shape1.png"
-                                                                                                alt=""
+                                                                                                alt="shape"
                                                                                                 class="tp-rs-img rs-lazyload"
                                                                                                 width="625" height="561"
                                                                                                 data-lazyload="h8-shape1.png"
@@ -3364,7 +3212,7 @@
                                                                                                 decoding="async"
                                                                                                 style="margin-left: -80px;"
                                                                                                 src="h8-shape3.png"
-                                                                                                alt=""
+                                                                                                alt="shape"
                                                                                                 class="tp-rs-img rs-lazyload"
                                                                                                 width="403" height="175"
                                                                                                 data-lazyload="h8-shape3.png"
@@ -3424,7 +3272,8 @@
     --> </rs-slide> <rs-slide style="position: absolute;" data-key="rs-18" data-title="Slide" data-in="o:0;"
                                                                                         data-out="a:false;"> <img
                                                                                             decoding="async"
-                                                                                            src="Homepage-2.jpg" alt=""
+                                                                                            src="Homepage-2.jpg"
+                                                                                            alt="slider2"
                                                                                             title="h8-bg-slider3"
                                                                                             width="1920" height="1040"
                                                                                             class="rev-slidebg tp-rs-img rs-lazyload"
@@ -3484,10 +3333,10 @@
                                                                                                 data-frame_0="y:50;"
                                                                                                 data-frame_1="st:3600;sp:1000;sR:3600;"
                                                                                                 data-frame_999="o:0;st:w;sR:4400;"
-                                                                                                style="z-index:10;font-family:'Roboto';">
-                                                                                                <div id="slider-text3">
+                                                                                                style="z-index:10;font-family:'Roboto'; margin-top: -140px;">
+                                                                                                <div id="title-head3">
 
-                                                                                                    Unlock
+                                                                                                    <!-- Unlock
                                                                                                     the full
                                                                                                     potential of your
                                                                                                     business
@@ -3504,7 +3353,7 @@
                                                                                                     collaborating with
                                                                                                     you
                                                                                                     to
-                                                                                                    identify areas
+                                                                                                    identify areas -->
                                                                                                 </div>
 
                                                                                             </rs-layer>
@@ -3596,11 +3445,11 @@
                                                                                                 data-frame_1_chars="e:power4.inOut;d:10;oZ:-50;"
                                                                                                 data-frame_999="o:0;st:w;sR:4600;"
                                                                                                 style="z-index:6;font-family:'Fira Sans';">
-                                                                                                <div id="slider-text1">
-                                                                                                    <p>Empowering
+                                                                                                <div id="title-text3">
+                                                                                                    <!-- <p>Empowering
                                                                                                         Innovation</p>
                                                                                                     <br>
-                                                                                                    <p>for Success</p>
+                                                                                                    <p>for Success</p> -->
                                                                                                 </div>
                                                                                             </rs-layer>
 
@@ -3620,7 +3469,7 @@
                                                                                             style="z-index:7;"><img
                                                                                                 decoding="async"
                                                                                                 src="h8-shape2.png"
-                                                                                                alt=""
+                                                                                                alt="shape"
                                                                                                 class="tp-rs-img rs-lazyload"
                                                                                                 width="447" height="677"
                                                                                                 data-lazyload="h8-shape2.png"
@@ -3641,7 +3490,7 @@
                                                                                             style="z-index:6;"><img
                                                                                                 decoding="async"
                                                                                                 src="h8-shape1.png"
-                                                                                                alt=""
+                                                                                                alt="shape"
                                                                                                 class="tp-rs-img rs-lazyload"
                                                                                                 width="625" height="561"
                                                                                                 data-lazyload="h8-shape1.png"
@@ -3661,7 +3510,7 @@
                                                                                                 decoding="async"
                                                                                                 style="margin-left: -80px;"
                                                                                                 src="h8-shape3.png"
-                                                                                                alt=""
+                                                                                                alt="shape"
                                                                                                 class="tp-rs-img rs-lazyload"
                                                                                                 width="403" height="175"
                                                                                                 data-lazyload="h8-shape3.png"
@@ -3808,11 +3657,10 @@
                                                                                                 <h4 class="item--title">
                                                                                                     Support Inquiries:
                                                                                                 </h4>
-                                                                                                <div
+                                                                                                <div id="dynamicText"
                                                                                                     class="item--description">
-                                                                                                    Using any of our
-                                                                                                    products<br /> and
-                                                                                                    need help?</div>
+                                                                                                </div>
+
                                                                                                 <div
                                                                                                     class="item--button">
                                                                                                     <a href="FAQ.html">Get
@@ -3891,10 +3739,9 @@
                                                                                                 <h4 class="item--title">
                                                                                                     Project Inquiries:
                                                                                                 </h4>
-                                                                                                <div
+                                                                                                <div id="text1"
                                                                                                     class="item--description">
-                                                                                                    Looking to start a
-                                                                                                    new <br>project?
+
                                                                                                 </div>
                                                                                                 <div
                                                                                                     class="item--button">
@@ -3957,12 +3804,15 @@
                                                                     <div class="ct-image-single ct-no-effect   wow fadeInLeft"
                                                                         data-width="" data-height=""
                                                                         data-wow-delay="ms">
-                                                                        <div class="ct-image-single--inner"> <img
-                                                                                decoding="async" width="375"
+
+                                                                        <div class="ct-image-single--inner">
+
+                                                                            <img decoding="async" width="375"
                                                                                 height="380"
                                                                                 src="https://demo.casethemes.net/itfirm/wp-content/uploads/2022/12/h8-shape-01.png"
                                                                                 class="no-lazyload img-main attachment-full"
-                                                                                alt="" /></div>
+                                                                                alt="shape" />
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -4074,19 +3924,22 @@
                                                                                 <div class="ct-inline-css" data-css="
      "></div>
                                                                             </div>
-                                                                            <div class="item--sub-title style-default wow fadeInUp"
-                                                                                data-wow-delay="ms"> <span> About Our
-                                                                                    Company</span></div>
 
 
+                                                                            <div id="about"
+                                                                                class="item--sub-title style-default wow fadeInUp"
+                                                                                data-wow-delay="ms">
+                                                                                <!-- Dynamic content will be inserted here -->
+                                                                            </div>
 
 
-                                                                            <h3 class="item--title st-default wow fadeInUp"
-                                                                                data-wow-delay="ms"> <span
-                                                                                    class="ct-text-inner">The<strong>Trusted</strong>
-                                                                                    Leading IT Service
-                                                                                    <strong>Company</strong> </span>
+                                                                            <h3 id="about_title"
+                                                                                class="item--title st-default wow fadeInUp"
+                                                                                data-wow-delay="ms">
+                                                                                <!-- Dynamic content will be inserted here -->
                                                                             </h3>
+
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4095,29 +3948,22 @@
 
 
 
-
                                                             <div class="elementor-element elementor-element-6bd3ae1 elementor-widget elementor-widget-ct_text_editor"
                                                                 data-id="6bd3ae1" data-element_type="widget"
                                                                 data-widget_type="ct_text_editor.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <div id="ct_text_editor-6bd3ae1"
+
+                                                                    <div id="about_text"
                                                                         class="ct-text-editor wow fadeInUp"
                                                                         data-wow-delay="ms">
                                                                         <div class="ct-item--inner">
-                                                                            <div class="ct-inline-css" data-css="
-     "></div>
-                                                                            <div
-                                                                                class="ct-text-editor elementor-clearfix">
-                                                                                At IBG Infotech, we go beyond
-                                                                                expectations.
-                                                                                We don't just keep your IT running
-                                                                                smoothly;
-                                                                                we proactively optimize and streamline
-                                                                                your
-                                                                                systems to ensure uninterrupted
-                                                                                operations. </div>
+                                                                            <div class="ct-inline-css" data-css="">
+                                                                            </div>
+                                                                            <!-- Dynamic content will be inserted here -->
+
                                                                         </div>
                                                                     </div>
+
                                                                 </div>
                                                             </div>
 
@@ -4337,26 +4183,28 @@
                                                     <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d9ca26a ct-column-none col-offset-none col-color-offset-none"
                                                         data-id="d9ca26a" data-element_type="column">
                                                         <div class="elementor-widget-wrap elementor-element-populated">
+
+
+
                                                             <div class="elementor-element elementor-element-d6d8adb elementor-widget elementor-widget-ct_image"
                                                                 data-id="d6d8adb" data-element_type="widget"
                                                                 data-widget_type="ct_image.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="ct-image-single ct-no-effect   "
-                                                                        data-width="" data-height=""
-                                                                        data-wow-delay="ms">
-                                                                        <div class="ct-image-single--inner">
-
-
-
-                                                                            <img decoding="async" width="581"
-                                                                                height="807" src="h8-banner2-01.png"
-                                                                                class="no-lazyload img-main attachment-full"
-                                                                                alt="" />
+                                                                <div id="dynamicImageContainer"
+                                                                    class="elementor-element elementor-element-d6d8adb elementor-widget elementor-widget-ct_image"
+                                                                    data-id="d6d8adb" data-element_type="widget"
+                                                                    data-widget_type="ct_image.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <div class="ct-image-single ct-no-effect"
+                                                                            data-width="" data-height=""
+                                                                            data-wow-delay="ms">
+                                                                            <div class="ct-image-single--inner"
+                                                                                id="imageContainer">
+                                                                                <!-- Dynamic Image will be loaded here -->
+                                                                            </div>
                                                                         </div>
-
-
                                                                     </div>
                                                                 </div>
+
                                                             </div>
 
 
@@ -4472,12 +4320,14 @@
                                                             <section
                                                                 class="elementor-section elementor-inner-section elementor-element elementor-element-c3a8b8d pxl-custom-section2 elementor-section-boxed elementor-section-height-default elementor-section-height-default ct-header-fixed-none ct-column-none ct-row-scroll-none ct-row-gradient--none"
                                                                 data-id="c3a8b8d" data-element_type="section">
-                                                                <div
-                                                                    class="elementor-container elementor-column-gap-extended ">
+                                                                <div class="elementor-container elementor-column-gap-extended "
+                                                                    id="p11111">
                                                                     <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-012f8a8 ct-column-none col-offset-none col-color-offset-none"
                                                                         data-id="012f8a8" data-element_type="column">
                                                                         <div
                                                                             class="elementor-widget-wrap elementor-element-populated">
+
+
                                                                             <div class="elementor-element elementor-element-92b71cf elementor-widget elementor-widget-ct_fancy_box"
                                                                                 data-id="92b71cf"
                                                                                 data-element_type="widget"
@@ -4741,15 +4591,12 @@
                                                                                                 </span>
                                                                                             </div>
 
-                                                                                            <h3 class="item--title st-default wow fadeInUp"
+                                                                                            <h3 id="dynamicHeaderText"
+                                                                                                class="item--title st-default wow fadeInUp"
                                                                                                 data-wow-delay="ms">
-                                                                                                <span
-                                                                                                    class="ct-text-inner"><strong
-                                                                                                        style="color: white;">One
-                                                                                                        platform.</strong>
-                                                                                                    Build
-                                                                                                    quickly.</span>
+
                                                                                             </h3>
+
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -4842,18 +4689,21 @@
                                                                                 <div class="ct-inline-css" data-css="
      "></div>
                                                                             </div>
-                                                                            <div class="item--sub-title style-default wow fadeInUp"
-                                                                                data-wow-delay="ms"> <span> FACTS!
-                                                                                </span></div>
+                                                                            <div id="dynamicFactsDiv"
+                                                                                class="item--sub-title style-default wow fadeInUp"
+                                                                                data-wow-delay="ms">
+
+                                                                            </div>
 
 
 
-                                                                            <h3 class="item--title st-default wow fadeInUp"
-                                                                                data-wow-delay="ms"> <span
-                                                                                    class="ct-text-inner"><strong>Gain
-                                                                                        productivity and
-                                                                                        performance</strong> with simple
-                                                                                    IT.</span></h3>
+
+                                                                            <h3 id="dynamicHeaderText2"
+                                                                                class="item--title st-default wow fadeInUp"
+                                                                                data-wow-delay="ms">
+
+                                                                            </h3>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4893,16 +4743,11 @@
 
 
                                                                                                 </div>
-                                                                                                <div
+                                                                                                <div id="dynamicNations"
                                                                                                     class="ct-counter-number">
-                                                                                                    <span
-                                                                                                        class="ct-counter-number-value"
-                                                                                                        data-duration="2000"
-                                                                                                        data-to-value="3"
-                                                                                                        data-delimiter="">1</span>
-                                                                                                    <span
-                                                                                                        class="ct-counter-number-suffix">+</span>
+
                                                                                                 </div>
+
                                                                                             </div>
                                                                                             <div
                                                                                                 class="ct-counter-title">
@@ -4943,16 +4788,11 @@
 
 
                                                                                                 </div>
-                                                                                                <div
+                                                                                                <div id="dynamicMembers"
                                                                                                     class="ct-counter-number">
-                                                                                                    <span
-                                                                                                        class="ct-counter-number-value"
-                                                                                                        data-duration="2000"
-                                                                                                        data-to-value="45"
-                                                                                                        data-delimiter="">1</span>
-                                                                                                    <span
-                                                                                                        class="ct-counter-number-suffix">+</span>
+
                                                                                                 </div>
+
                                                                                             </div>
                                                                                             <div
                                                                                                 class="ct-counter-title">
@@ -4995,16 +4835,11 @@
 
 
                                                                                                 </div>
-                                                                                                <div
+                                                                                                <div id="dynamicAwards"
                                                                                                     class="ct-counter-number">
-                                                                                                    <span
-                                                                                                        class="ct-counter-number-value"
-                                                                                                        data-duration="2000"
-                                                                                                        data-to-value="5"
-                                                                                                        data-delimiter="">1</span>
-                                                                                                    <span
-                                                                                                        class="ct-counter-number-suffix">+</span>
+
                                                                                                 </div>
+
                                                                                             </div>
                                                                                             <div
                                                                                                 class="ct-counter-title">
@@ -5044,16 +4879,11 @@
                                                                                                         width="120px">
 
                                                                                                 </div>
-                                                                                                <div
+                                                                                                <div id="dynamicSatisfiedCustomers"
                                                                                                     class="ct-counter-number">
-                                                                                                    <span
-                                                                                                        class="ct-counter-number-value"
-                                                                                                        data-duration="2000"
-                                                                                                        data-to-value="100"
-                                                                                                        data-delimiter="">1</span>
-                                                                                                    <span
-                                                                                                        class="ct-counter-number-suffix">+</span>
+
                                                                                                 </div>
+
                                                                                             </div>
                                                                                             <div
                                                                                                 class="ct-counter-title">
@@ -5082,29 +4912,6 @@
                                                                         class="ct-grid ct-client-grid1 style2">
                                                                         <div class="ct-grid-inner ct-grid-masonry row animate-time"
                                                                             data-gutter="7">
-                                                                            <div
-                                                                                class="grid-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                                                                                <div
-                                                                                    class="ct-client--image img-hover-active">
-                                                                                    <a href="https://orthoxprs.com/"
-                                                                                        target="_blank">
-                                                                                        <img width="137" height="37"
-                                                                                            src="ortho logo.png"
-                                                                                            class="no-lazyload ct-client--imgmain attachment-full"
-                                                                                            alt="" decoding="async" />
-                                                                                        <div
-                                                                                            class="ct-client--imghover">
-                                                                                            <img width="137" height="37"
-                                                                                                src="ortho logo.png"
-                                                                                                class="no-lazyload attachment-full"
-                                                                                                alt=""
-                                                                                                decoding="async" />
-                                                                                        </div>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-
-
 
 
 
@@ -5113,50 +4920,24 @@
                                                                                 <div
                                                                                     class="ct-client--image img-hover-active">
                                                                                     <a href="https://promunim.com/"
+                                                                                        rel="nofollow noopener"
                                                                                         target="_blank">
                                                                                         <img width="130" height="43"
                                                                                             src="promunim logo.png"
                                                                                             class="no-lazyload ct-client--imgmain attachment-full"
-                                                                                            alt="" decoding="async" />
+                                                                                            alt="promunim logo"
+                                                                                            decoding="async" />
                                                                                         <div
                                                                                             class="ct-client--imghover">
                                                                                             <img width="130" height="43"
                                                                                                 src="promunim logo.png"
                                                                                                 class="no-lazyload attachment-full"
-                                                                                                alt=""
+                                                                                                alt="promunim logo"
                                                                                                 decoding="async" />
                                                                                         </div>
                                                                                     </a>
                                                                                 </div>
                                                                             </div>
-
-
-
-
-
-                                                                            <div
-                                                                                class="grid-item col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                                                                                <div
-                                                                                    class="ct-client--image img-hover-active">
-                                                                                    <a href="https://slchospitals.com/"
-                                                                                        target="_blank">
-                                                                                        <img width="136" height="32"
-                                                                                            src="shree life care logo.png"
-                                                                                            class="no-lazyload ct-client--imgmain attachment-full"
-                                                                                            alt="" decoding="async" />
-                                                                                        <div
-                                                                                            class="ct-client--imghover">
-                                                                                            <img width="136" height="32"
-                                                                                                src="shree life care logo.png"
-                                                                                                class="no-lazyload attachment-full"
-                                                                                                alt=""
-                                                                                                decoding="async" />
-                                                                                        </div>
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-
-
 
 
 
@@ -5165,17 +4946,19 @@
                                                                                 <div
                                                                                     class="ct-client--image img-hover-active">
                                                                                     <a href="https://ibgreality.com/"
+                                                                                        rel="nofollow noopener"
                                                                                         target="_blank">
                                                                                         <img width="146" height="35"
                                                                                             src="IBG Reality logo.png"
                                                                                             class="no-lazyload ct-client--imgmain attachment-full"
-                                                                                            alt="" decoding="async" />
+                                                                                            alt="ibg reality logo"
+                                                                                            decoding="async" />
                                                                                         <div
                                                                                             class="ct-client--imghover">
                                                                                             <img width="146" height="35"
                                                                                                 src="IBG Reality logo.png"
                                                                                                 class="no-lazyload attachment-full"
-                                                                                                alt=""
+                                                                                                alt="ibg reality logo"
                                                                                                 decoding="async" />
                                                                                         </div>
                                                                                     </a>
@@ -5190,17 +4973,19 @@
                                                                                 <div
                                                                                     class="ct-client--image img-hover-active">
                                                                                     <a href="https://ibginfotech.com/"
+                                                                                        rel="nofollow noopener"
                                                                                         target="_blank">
                                                                                         <img width="146" height="35"
                                                                                             src="legaster logo.png"
                                                                                             class="no-lazyload ct-client--imgmain attachment-full"
-                                                                                            alt="" decoding="async" />
+                                                                                            alt="legaster logo"
+                                                                                            decoding="async" />
                                                                                         <div
                                                                                             class="ct-client--imghover">
                                                                                             <img width="146" height="35"
                                                                                                 src="legaster logo.png"
                                                                                                 class="no-lazyload attachment-full"
-                                                                                                alt=""
+                                                                                                alt="legaster logo"
                                                                                                 decoding="async" />
                                                                                         </div>
                                                                                     </a>
@@ -5214,17 +4999,19 @@
                                                                                 <div
                                                                                     class="ct-client--image img-hover-active">
                                                                                     <a href="https://ibgSolar.com/"
+                                                                                        rel="nofollow noopener"
                                                                                         target="_blank">
                                                                                         <img width="146" height="35"
                                                                                             src="IBG-SOLAR-LOGO_04.png"
                                                                                             class="no-lazyload ct-client--imgmain attachment-full"
-                                                                                            alt="" decoding="async" />
+                                                                                            alt="ibg solar logo"
+                                                                                            decoding="async" />
                                                                                         <div
                                                                                             class="ct-client--imghover">
                                                                                             <img width="146" height="35"
                                                                                                 src="IBG-SOLAR-LOGO_04.png"
                                                                                                 class="no-lazyload attachment-full"
-                                                                                                alt=""
+                                                                                                alt="ibg solar logo"
                                                                                                 decoding="async" />
                                                                                         </div>
                                                                                     </a>
@@ -5262,7 +5049,7 @@
                                                                                 height="380"
                                                                                 src="https://demo.casethemes.net/itfirm/wp-content/uploads/2022/12/h8-shape-01.png"
                                                                                 class="no-lazyload img-main attachment-full"
-                                                                                alt="" /></div>
+                                                                                alt="shape" /></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -5312,12 +5099,12 @@
      -webkit-text-fill-color: transparent;
      }
      "></div>
-                                                                            <h3 class="item--title st-default wow fadeInUp"
-                                                                                data-wow-delay="ms"> <span
-                                                                                    class="ct-text-inner"><strong>Customized
-                                                                                        IT Solutions</strong>
-                                                                                    Aligned with Your Business
-                                                                                    Needs.</span></h3>
+                                                                            <h3 id="dynamicMiddleText"
+                                                                                class="item--title st-default wow fadeInUp"
+                                                                                data-wow-delay="ms">
+
+                                                                            </h3>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5336,15 +5123,11 @@
                                                                         <div class="ct-item--inner">
                                                                             <div class="ct-inline-css" data-css="
      "></div>
-                                                                            <div
+                                                                            <div id="dynamicMiddleText1"
                                                                                 class="ct-text-editor elementor-clearfix">
-                                                                                We understand the importance of
-                                                                                tailored IT solutions that
-                                                                                cater to the unique requirements
-                                                                                of your company. Our expertise
-                                                                                and support empower your teams
-                                                                                to focus on what matters
-                                                                                most for your business's success</div>
+
+                                                                            </div>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5479,110 +5262,68 @@
                                                                                 <div class="slick-slide">
 
 
-
-                                                                                    <div class="item--inner "
+                                                                                    <div class="item--inner"
                                                                                         data-wow-duration="1.2s">
-                                                                                        <div class="item--image"> <img
-                                                                                                decoding="async"
-                                                                                                class="no-lazyload "
-                                                                                                src="images 12-021.jpg"
-                                                                                                width="253" height="253"
-                                                                                                alt="h8-team1"
-                                                                                                title="h8-team1" />
+                                                                                        <div class="item--image"
+                                                                                            id="firstRecordImage">
                                                                                         </div>
-
-
-
-
                                                                                         <div class="tem--meta">
-                                                                                            <h4 class="item--title">
-                                                                                                Khushal Patil</h4>
-                                                                                            <div class="item--position">
-                                                                                                Team Member</div>
-
-
-                                                                                        </div>
-                                                                                        <div class="item--shape"></div>
-                                                                                    </div>
-                                                                                </div>
-
-
-
-
-
-
-
-                                                                                <div class="slick-slide">
-                                                                                    <div class="item--inner "
-                                                                                        data-wow-duration="1.2s">
-                                                                                        <div class="item--image"> <img
-                                                                                                decoding="async"
-                                                                                                class="no-lazyload "
-                                                                                                src="images 12-031.jpg"
-                                                                                                width="253" height="253"
-                                                                                                alt="h8-team2"
-                                                                                                title="h8-team2" />
-                                                                                        </div>
-
-
-
-
-
-                                                                                        <div class="tem--meta">
-                                                                                            <h4 class="item--title">
-                                                                                                Sagar Birajdar</h4>
-                                                                                            <div class="item--position">
-                                                                                                Team Member
-                                                                                            </div>
-
-
-
-
-                                                                                        </div>
-                                                                                        <div class="item--shape"></div>
-                                                                                    </div>
-                                                                                </div>
-
-
-
-
-
-
-                                                                                <div class="slick-slide">
-                                                                                    <div class="item--inner "
-                                                                                        data-wow-duration="1.2s">
-                                                                                        <div class="item--image"> <img
-                                                                                                decoding="async"
-                                                                                                class="no-lazyload"
-                                                                                                src="sir.jpg"
-                                                                                                width="253" height="253"
-                                                                                                alt="h8-team3"
-                                                                                                title="h8-team3" />
-                                                                                        </div>
-
-
-
-
-
-                                                                                        <div class="tem--meta">
-                                                                                            <h4 class="item--title">
-                                                                                                Maheshkumar Chinchghare
+                                                                                            <h4 class="item--title"
+                                                                                                id="firstRecordName">
                                                                                             </h4>
-                                                                                            <div class="item--position">
-                                                                                                Sales & Marketing
-                                                                                                Advisor</div>
-
-
-
-
+                                                                                            <div class="item--position"
+                                                                                                id="firstRecordDesignation">
+                                                                                            </div>
                                                                                         </div>
                                                                                         <div class="item--shape"></div>
                                                                                     </div>
+
+
+                                                                                </div>
+
+                                                                                <div class="slick-slide">
+
+                                                                                    <div class="item--inner"
+                                                                                        data-wow-duration="1.2s">
+                                                                                        <div class="item--image"
+                                                                                            id="secondRecordImage">
+                                                                                        </div>
+                                                                                        <div class="tem--meta">
+                                                                                            <h4 class="item--title"
+                                                                                                id="secondRecordName">
+                                                                                            </h4>
+                                                                                            <div class="item--position"
+                                                                                                id="secondRecordDesignation">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="item--shape"></div>
+                                                                                    </div>
+
+
                                                                                 </div>
 
 
+                                                                                <div class="slick-slide">
 
 
+                                                                                    <div class="item--inner"
+                                                                                        data-wow-duration="1.2s">
+                                                                                        <div class="item--image"
+                                                                                            id="thirdRecordImage">
+                                                                                        </div>
+                                                                                        <div class="tem--meta">
+                                                                                            <h4 class="item--title"
+                                                                                                id="thirdRecordName">
+                                                                                            </h4>
+                                                                                            <div class="item--position"
+                                                                                                id="thirdRecordDesignation">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="item--shape"></div>
+                                                                                    </div>
+
+
+                                                                                </div>
 
                                                                             </div>
                                                                         </div>
@@ -5622,7 +5363,7 @@
                                                                                 height="380"
                                                                                 src="https://demo.casethemes.net/itfirm/wp-content/uploads/2022/12/h8-shape-01.png"
                                                                                 class="no-lazyload img-main attachment-full"
-                                                                                alt="" /></div>
+                                                                                alt="shape" /></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -5645,7 +5386,7 @@
                                                                                 height="685"
                                                                                 src="https://demo.casethemes.net/itfirm/wp-content/uploads/2022/12/h8-shape-02.png"
                                                                                 class="no-lazyload img-main attachment-full"
-                                                                                alt="" /></div>
+                                                                                alt="shape" /></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -5687,14 +5428,18 @@
                                                                                 <div class="ct-inline-css" data-css="
      "></div>
                                                                             </div>
-                                                                            <div class="item--sub-title style-default wow fadeInUp"
-                                                                                data-wow-delay="ms"> <span> Customer’s
-                                                                                    Review </span></div>
-                                                                            <h3 class="item--title st-default wow fadeInUp"
-                                                                                data-wow-delay="ms"> <span
-                                                                                    class="ct-text-inner"><strong>Highly
-                                                                                        satisfied clients </strong>
-                                                                                    World-wide</span></h3>
+                                                                            <div id="dynamicCustomerReview"
+                                                                                class="item--sub-title style-default wow fadeInUp"
+                                                                                data-wow-delay="ms">
+
+                                                                            </div>
+
+                                                                            <h3 id="dynamicSatisfiedClients"
+                                                                                class="item--title st-default wow fadeInUp"
+                                                                                data-wow-delay="ms">
+
+                                                                            </h3>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -5727,7 +5472,7 @@
                                                                                                 width="154" height="45"
                                                                                                 src="Clutch-Logo-947x1024 (1).png"
                                                                                                 class="no-lazyload img-main attachment-full"
-                                                                                                alt=""
+                                                                                                alt="clutch logo"
                                                                                                 style="width: 200px; border-radius: 5rem;" />
                                                                                         </div>
                                                                                     </div>
@@ -6494,13 +6239,6 @@
                                                                 </div>
                                                             </div>
 
-
-
-
-
-
-
-
                                                             <section
                                                                 class="elementor-section elementor-inner-section elementor-element elementor-element-1d6fabe elementor-section-boxed elementor-section-height-default elementor-section-height-default ct-header-fixed-none ct-column-none ct-row-scroll-none ct-row-gradient--none"
                                                                 data-id="1d6fabe" data-element_type="section">
@@ -6531,8 +6269,6 @@
                                                                             </div>
 
 
-
-
                                                                             <div class="elementor-element elementor-element-dc4546e elementor-widget__width-auto elementor-widget elementor-widget-ct_image"
                                                                                 data-id="dc4546e"
                                                                                 data-element_type="widget"
@@ -6547,7 +6283,7 @@
                                                                                                 width="154" height="45"
                                                                                                 src="Clutch-Logo-947x1024 (1).png"
                                                                                                 class="no-lazyload img-main attachment-full"
-                                                                                                alt=""
+                                                                                                alt="clutch logo"
                                                                                                 style="width: 100px; height: 100px;" />
                                                                                         </div>
                                                                                     </div>
@@ -6557,8 +6293,6 @@
                                                                     </div>
                                                                 </div>
                                                             </section>
-
-
 
 
                                                             <section
@@ -6590,10 +6324,6 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-
-
-
-
 
 
 
@@ -6638,12 +6368,6 @@
                                             </section>
 
 
-
-
-
-
-
-
                                             <section
                                                 class="elementor-section elementor-top-section elementor-element elementor-element-8e2213e elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default ct-header-fixed-none ct-column-none ct-row-scroll-none ct-row-gradient--none"
                                                 data-id="8e2213e" data-element_type="section"
@@ -6665,13 +6389,10 @@
                                                                                 height="531"
                                                                                 src="https://demo.casethemes.net/itfirm/wp-content/uploads/2023/01/h8-shape-03.png"
                                                                                 class="no-lazyload img-main attachment-full"
-                                                                                alt="" /></div>
+                                                                                alt="shape" /></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-
-
 
 
                                                             <div class="elementor-element elementor-element-a8d94d8 elementor-widget elementor-widget-ct_heading"
@@ -6693,9 +6414,7 @@
                                                             </div>
 
 
-
-
-                                                            <div class="elementor-element elementor-element-859b51b elementor-widget elementor-widget-ct_heading"
+                                                         <div class="elementor-element elementor-element-859b51b elementor-widget elementor-widget-ct_heading"
                                                                 data-id="859b51b" data-element_type="widget"
                                                                 data-widget_type="ct_heading.default">
                                                                 <div class="elementor-widget-container">
@@ -6713,9 +6432,6 @@
                                                                 </div>
                                                             </div>
 
-
-
-
                                                             <div class="elementor-element elementor-element-c2670c4 elementor-widget elementor-widget-ct_text_editor"
                                                                 data-id="c2670c4" data-element_type="widget"
                                                                 data-widget_type="ct_text_editor.default">
@@ -6725,17 +6441,13 @@
                                                                         <div class="ct-item--inner">
                                                                             <div class="ct-inline-css" data-css="
      "></div>
-                                                                            <div
+                                                                            <div id="phone"
                                                                                 class="ct-text-editor elementor-clearfix">
-                                                                                +917391007711</div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-
-
-
 
                                                             <div class="elementor-element elementor-element-8b8e02e elementor-widget elementor-widget-ct_text_editor"
                                                                 data-id="8b8e02e" data-element_type="widget"
@@ -6753,10 +6465,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-
-
-
 
                                                             <div class="elementor-element elementor-element-8c3dd59 elementor-widget elementor-widget-ct_heading"
                                                                 data-id="8c3dd59" data-element_type="widget"
@@ -6776,10 +6484,6 @@
                                                                 </div>
                                                             </div>
 
-
-
-
-
                                                             <div class="elementor-element elementor-element-9ac5675 elementor-widget elementor-widget-ct_text_editor"
                                                                 data-id="9ac5675" data-element_type="widget"
                                                                 data-widget_type="ct_text_editor.default">
@@ -6789,10 +6493,9 @@
                                                                         <div class="ct-item--inner">
                                                                             <div class="ct-inline-css" data-css="
      "></div>
-                                                                            <div
+                                                                            <div id="address"
                                                                                 class="ct-text-editor elementor-clearfix">
-                                                                                Hadpsar, Pune,<br> Maharashtra, IND:
-                                                                                411028</div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -6820,8 +6523,23 @@
                                                             </div>
 
 
-
-
+                                                            <div class="elementor-element elementor-element-8c3dd59 elementor-widget elementor-widget-ct_heading"
+                                                                data-id="8c3dd59" data-element_type="widget"
+                                                                data-widget_type="ct_heading.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div id="ct_heading-8c3dd59"
+                                                                        class="ct-heading h-align- item-st-default highlight-style1">
+                                                                        <div class="ct-heading--inner">
+                                                                            <div class="ct-inline-css" data-css="
+     "></div>
+                                                                            <h3 class="item--title st-default "
+                                                                                data-wow-delay="ms"> <span
+                                                                                    class="ct-text-inner">Email:</span>
+                                                                            </h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
 
                                                             <div class="elementor-element elementor-element-1f79de5 elementor-widget elementor-widget-ct_text_editor"
@@ -6833,9 +6551,9 @@
                                                                         <div class="ct-item--inner">
                                                                             <div class="ct-inline-css" data-css="
      "></div>
-                                                                            <div
+                                                                            <div id="email"
                                                                                 class="ct-text-editor elementor-clearfix">
-                                                                                +917391007711</div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -6910,8 +6628,6 @@
                                                                                             name="_wpcf7_posted_data_hash"
                                                                                             value="" />
                                                                                     </div>
-
-
 
                                                                                     <div class="row">
                                                                                         <div
@@ -7069,7 +6785,7 @@
                                                                                 height="531"
                                                                                 src="https://demo.casethemes.net/itfirm/wp-content/uploads/2023/01/h8-shape-03.png"
                                                                                 class="no-lazyload img-main attachment-full"
-                                                                                alt="" /></div>
+                                                                                alt="shape" /></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -7126,14 +6842,10 @@
                                     }
                                 </style>
 
-
-
-                                <div class="elementor-custom-embed">
-                                    <iframe loading="lazy"
-                                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15134.401144372416!2d73.94773804452684!3d18.501756240363314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sibg%20fincon!5e0!3m2!1sen!2sin!4v1691492752398!5m2!1sen!2sin"
-                                        title="India,  Maharashtra" aria-label="India,  Maharashtra"
-                                        style="border:0; filter: grayscale(0%)!important; width: 3000px;"></iframe>
+                                <div class="elementor-custom-embed" id="map">
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -7143,10 +6855,6 @@
 
 
         <!-- ******************************************************************************************************************************** -->
-
-
-
-
 
 
         <footer id="colophon" class="site-footer-custom">
@@ -7166,6 +6874,8 @@
                                             <div class="elementor-widget-wrap elementor-element-populated">
 
 
+
+
                                                 <div class="elementor-element elementor-element-5587e665 elementor-widget elementor-widget-ct_heading"
                                                     data-id="5587e665" data-element_type="widget"
                                                     data-widget_type="ct_heading.default">
@@ -7175,11 +6885,12 @@
                                                             class="ct-heading h-align- item-st-default highlight-style1">
                                                             <div class="ct-heading--inner">
                                                                 <div class="ct-inline-css" data-css=""></div>
-
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
+
 
 
                                                 <div class="elementor-element elementor-element-5a8625d elementor-widget elementor-widget-ct_text_editor"
@@ -7189,7 +6900,8 @@
                                                         <div id="ct_text_editor-5a8625d"
                                                             class="ct-text-editor wow fadeInUp" data-wow-delay="ms">
                                                             <div class="ct-item--inner">
-                                                                <div class="ct-inline-css" data-css=""></div>
+                                                                <div class="ct-inline-css" data-css="
+     "></div>
                                                                 <div class="ct-text-editor elementor-clearfix"> As a
                                                                     expert, We will help to organize.</div>
                                                             </div>
@@ -7200,6 +6912,9 @@
 
                                             </div>
                                         </div>
+
+
+
 
                                         <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-c2869e9 ct-column-none col-offset-none col-color-offset-none"
                                             data-id="c2869e9" data-element_type="column">
@@ -7225,6 +6940,10 @@
                                     </div>
                                 </section>
 
+
+
+
+
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-5a65a440 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default ct-header-fixed-none ct-column-none ct-row-scroll-none ct-row-gradient--none"
                                     data-id="5a65a440" data-element_type="section"
@@ -7238,11 +6957,13 @@
                                                     class="elementor-section elementor-inner-section elementor-element elementor-element-553a579f elementor-section-boxed elementor-section-height-default elementor-section-height-default ct-header-fixed-none ct-column-none ct-row-scroll-none ct-row-gradient--none"
                                                     data-id="553a579f" data-element_type="section">
 
-                                                    <a href="#" id="dynamicImageAnchor">
+
+                                                    <a href="index.html" id="dynamicImageAnchor">
                                                         <img id="dynamicImage" width="497" height="203" src=""
                                                             class="attachment-full" alt=""
                                                             style="width: 200px;transform: translateY(70px);" />
                                                     </a>
+
 
                                                     <div class="elementor-container elementor-column-gap-extended ">
                                                         <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-2858eb79 ct-column-none col-offset-none col-color-offset-none"
@@ -7261,6 +6982,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+
 
 
                                                                 <div class="elementor-element elementor-element-3c971003 elementor-widget elementor-widget-ct_text_editor"
@@ -7282,7 +7004,9 @@
                                                                     </div>
                                                                 </div>
 
+
                                                                 <br>
+
                                                                 <div class="elementor-element elementor-element-16f9938 elementor-widget elementor-widget-ct_button"
                                                                     data-id="16f9938" data-element_type="widget"
                                                                     data-widget_type="ct_button.default"
@@ -7328,6 +7052,9 @@
                                                                     </div>
                                                                 </div>
 
+
+
+
                                                                 <div class="elementor-element elementor-element-758dc4b5 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
                                                                     data-id="758dc4b5" data-element_type="widget"
                                                                     data-widget_type="divider.default">
@@ -7337,6 +7064,9 @@
                                                                             </span></div>
                                                                     </div>
                                                                 </div>
+
+
+
 
                                                                 <div class="elementor-element elementor-element-7ee06d85 elementor-widget elementor-widget-ct_contact_info"
                                                                     data-id="7ee06d85" data-element_type="widget"
@@ -7359,6 +7089,9 @@
                                                                                         <path
                                                                                             d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
                                                                                     </svg>
+
+
+
                                                                                 </span>
 
                                                                                 <span class="ct-contact-content">
@@ -7397,6 +7130,11 @@
                                                                     </div>
                                                                 </div>
 
+
+
+
+
+
                                                                 <div class="elementor-element elementor-element-394cefda elementor-widget elementor-widget-ct_text_editor"
                                                                     data-id="394cefda" data-element_type="widget"
                                                                     data-widget_type="ct_text_editor.default">
@@ -7404,8 +7142,8 @@
                                                                         <div id="ct_text_editor-394cefda"
                                                                             class="ct-text-editor " data-wow-delay="ms">
                                                                             <div class="ct-item--inner">
-                                                                                <div class="ct-inline-css" data-css="">
-                                                                                </div>
+                                                                                <div class="ct-inline-css" data-css="
+     "></div>
                                                                                 <div
                                                                                     class="ct-text-editor elementor-clearfix">
                                                                                     Open Hours:</div>
@@ -7413,6 +7151,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+
 
 
                                                                 <div id="ct_text_editor-76a5dd44" class="ct-text-editor"
@@ -7429,8 +7168,13 @@
                                                                 </div>
 
 
+
                                                             </div>
                                                         </div>
+
+
+
+
 
                                                         <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-49aa1994 ct-column-none col-offset-none col-color-offset-none"
                                                             data-id="49aa1994" data-element_type="column">
@@ -7443,8 +7187,8 @@
                                                                         <div id="ct_heading-4c0334df"
                                                                             class="ct-heading h-align- item-st-default highlight-style1">
                                                                             <div class="ct-heading--inner">
-                                                                                <div class="ct-inline-css" data-css="">
-                                                                                </div>
+                                                                                <div class="ct-inline-css" data-css="
+     "></div>
                                                                                 <h3 class="item--title st-default "
                                                                                     data-wow-delay="ms"> <span
                                                                                         class="ct-text-inner">PingNow!</span>
@@ -7453,6 +7197,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+
 
 
                                                                 <div class="elementor-element elementor-element-1505519e elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
@@ -7464,6 +7209,7 @@
                                                                             </span></div>
                                                                     </div>
                                                                 </div>
+
 
 
                                                                 <div id="ct_text_editor-76a5dd44" class="ct-text-editor"
@@ -7478,6 +7224,9 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+
+
+
 
                                                                 <div class="elementor-element elementor-element-2cdbf253 elementor-widget elementor-widget-ct_mailchimp_form"
                                                                     data-id="2cdbf253" data-element_type="widget"
@@ -7843,6 +7592,10 @@
 
                                                                             </div>
                                                                         </div>
+
+
+
+
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -7974,6 +7727,8 @@
             <div class="ct-cursor--icon ct-js-icon"></div>
         </div>
     </div>
+
+
     <script> window.RS_MODULES = window.RS_MODULES || {};
         window.RS_MODULES.modules = window.RS_MODULES.modules || {};
         window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
