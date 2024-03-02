@@ -1,0 +1,29 @@
+
+	/*-----------------------get-userProfile-----------------------*/
+	@PutMapping(value="update-user-profile")
+	public ResponseEntity<Map<String,Object>> updateUserProfile(@RequestBody Map<String, String> userData, Authentication authentication) {
+	    LoginUserDetails loginUserDetails=(LoginUserDetails) authentication.getPrincipal();
+	    Map<String,Object> response=new HashMap<String,Object>();
+	    try {
+	        Optional<LoginUserDetails> loginUser = loginUserDetailsRepository.findByEmail(loginUserDetails.getEmail());
+	        if(loginUser.isPresent()) {
+	            LoginUserDetails loginUserDetail =	loginUser.get();
+	            loginUserDetail.setEmail(loginUserDetails.getEmail());
+	            loginUserDetail.setName(userData.get("firstNameValue1"));
+	            loginUserDetail.setL_name(userData.get("lastNameValue1"));
+	            loginUserDetail.setNumber(userData.get("numberValue1"));
+	            loginUserDetailsRepository.save(loginUserDetail);
+	        } else {
+	            // Handle user not found
+	        }
+	        response.put("status", true);
+	        return new ResponseEntity<Map<String,Object>>(response, HttpStatus.OK);
+	    } catch(Exception ex) {
+	        ex.printStackTrace();
+	        response.put("status", false);
+	        response.put("error", ex.getMessage());
+	        return new ResponseEntity<Map<String,Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	    }
+	}
+
+    
